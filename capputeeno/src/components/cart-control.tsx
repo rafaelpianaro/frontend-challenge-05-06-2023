@@ -23,7 +23,7 @@ const Container = styled.div`
 export function CartControl() {
 
     const { value } = useLocalStorage('cart-items', [])
-    console.log('value', value)
+    // console.log('value', value)
 
      return (
         <Container>
