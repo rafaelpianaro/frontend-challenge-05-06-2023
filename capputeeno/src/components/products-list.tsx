@@ -18,7 +18,7 @@ interface ProductsListProps {
 
 export function ProductsList(props: ProductsListProps){
     const { data } = useProducts();
-    console.log(data);
+    // console.log(data);
     return(
         <ListContainer>
             {data?.map(product => 
