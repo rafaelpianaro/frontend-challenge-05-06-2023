@@ -1,8 +1,8 @@
 "use client"
 
 import { useProducts } from "@/hooks/useProducts";
-import { styled } from "styled-components";
 import { ProductCard } from "./product-card";
+import { styled } from "styled-components";
 
 const ListContainer = styled.div`
     display: grid;
@@ -12,11 +12,7 @@ const ListContainer = styled.div`
     margin-top: 32px;
 `
 
-interface ProductsListProps {
-
-}
-
-export function ProductsList(props: ProductsListProps){
+export function ProductsList(){
     const { data } = useProducts();
     // console.log(data);
     return(
