@@ -15,15 +15,20 @@ const FilterContainer = styled.div`
         cursor: pointer;
         font-family: inherit;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 22px;
         color: var(--text-dark);
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        margin-left: 10px;
 
         svg {
             margin-left: 16px;
+        }
+
+        @media(min-width: ${props => props.theme.desktopBreakpoint}) {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 `
